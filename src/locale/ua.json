@@ -4,5 +4,9 @@
   "app.banner": "Безкоштовна доставка в точки видачі",
   "app.header.catalog": "Каталог",
   "app.header.search-placeholder": "Я шукаю...",
-  "app.header.search-button": "Знайти"
+  "app.header.search-button": "Знайти",
+
+  "cart-modal.title": "Кошик",
+  "cart-modal.empty-cart": "Кошик порожній",
+  "cart-modal.empty-cart-caption": "Але це ніколи не пізно виправити"
 }

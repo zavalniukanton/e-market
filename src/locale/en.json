@@ -4,5 +4,9 @@
   "app.banner": "Free delivery to pick-up points",
   "app.header.catalog": "Catalog",
   "app.header.search-placeholder": "Search...",
-  "app.header.search-button": "Find"
+  "app.header.search-button": "Find",
+
+  "cart-modal.title": "Cart",
+  "cart-modal.empty-cart": "Cart is empty",
+  "cart-modal.empty-cart-caption": "But it's never too late to fix"
 }
