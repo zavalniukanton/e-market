@@ -6,7 +6,7 @@ import LanguageSelect from "./LanguageSelect";
 
 const Navbar = () => {
   const { setTheme } = useNextTheme();
-  const { isDark, type } = useTheme();
+  const { isDark } = useTheme();
   const { intl } = useIntl();
 
   return (
