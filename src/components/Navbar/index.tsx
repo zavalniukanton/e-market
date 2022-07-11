@@ -19,7 +19,7 @@ const Navbar = () => {
     <div style={{ position: "fixed", width: "100%" }}>
       <PickupBanner />
 
-      <header style={{ backgroundColor: "#221f1f", height: 72 }}>
+      <header style={{ height: 72, backgroundColor: "#221f1f" }}>
         <Container
           fluid
           display="flex"
