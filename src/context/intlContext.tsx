@@ -13,7 +13,7 @@ type Props = {
 };
 
 export function IntlProvider({ children }: Props) {
-  const { locale = "en", defaultLocale } = useRouter();
+  const { locale = "ua", defaultLocale } = useRouter();
 
   // @ts-ignore
   const messages = languages[locale];

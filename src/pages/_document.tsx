@@ -5,11 +5,16 @@ import Document, {
   Main,
   NextScript,
 } from "next/document";
+import { CssBaseline } from "@nextui-org/react";
+import React from "react";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
+    return {
+      ...initialProps,
+      styles: React.Children.toArray([initialProps.styles]),
+    };
   }
 
   render() {
@@ -26,6 +31,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Comforter&display=swap"
             rel="stylesheet"
           />
+          {CssBaseline.flush()}
         </Head>
         <body>
           <Main />

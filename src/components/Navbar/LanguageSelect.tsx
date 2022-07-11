@@ -40,27 +40,27 @@ const LanguageSelect = () => {
 
   const getLabel = () => {
     switch (locale) {
-      case "ua":
-        return "Ukrainian";
+      case "en":
+        return "English";
 
       case "ru":
         return "Russian";
 
       default:
-        return "English";
+        return "Ukrainian";
     }
   };
 
   const getFlag = (value: string) => {
     switch (value) {
-      case "ua":
-        return uaFlag;
+      case "en":
+        return usaFlag;
 
       case "ru":
         return ruFlag;
 
       default:
-        return usaFlag;
+        return uaFlag;
     }
   };
 
@@ -70,7 +70,7 @@ const LanguageSelect = () => {
       instanceId="select-language"
       defaultValue={{
         label: getLabel(),
-        value: locale || "en",
+        value: locale || "ua",
       }}
       onChange={handleChange}
       options={LOCALE_OPTIONS}

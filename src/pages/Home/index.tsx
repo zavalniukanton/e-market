@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { Card, Text } from "@nextui-org/react";
 
 import { useIntl } from "../../hooks/useIntl";
 import Layout from "../../components/Layout";
@@ -15,7 +16,11 @@ const Home = () => {
       </Head>
 
       <Layout>
-        <p>{intl("app.main")}</p>
+        <Card isPressable variant="bordered" css={{ mw: "400px" }}>
+          <Card.Body>
+            <Text>{intl("app.main")}</Text>
+          </Card.Body>
+        </Card>
       </Layout>
     </div>
   );
