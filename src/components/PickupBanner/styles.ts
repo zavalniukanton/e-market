@@ -4,7 +4,7 @@ export const styles = {
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    height: scrolled ? 0 : 32,
+    height: scrolled ? 0 : 30,
     backgroundColor: "#000000",
     transition: "all .3s ease-in-out",
     overflow: "hidden",

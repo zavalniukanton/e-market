@@ -4,13 +4,15 @@ import { ReactNode } from "react";
 type Props = {
   icon: ReactNode;
   styles?: CSS;
+  onClick: () => void;
 };
 
-const IconButton = ({ icon, styles }: Props) => {
+const IconButton = ({ icon, styles, onClick }: Props) => {
   return (
     <Button
       auto
       icon={icon}
+      onClick={onClick}
       css={{
         ...styles,
         borderRadius: 4,

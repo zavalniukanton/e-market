@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Text } from "@nextui-org/react";
+import { FaMapMarkedAlt } from "react-icons/fa";
 
 import { useIntl } from "../../hooks/useIntl";
 import { styles } from "./styles";
@@ -27,11 +28,13 @@ const PickupBanner = () => {
     <div style={styles.banner(scrolled)}>
       <Link href="/pickup-points">
         <a>
-          <Text color="success" size={24}>
+          <Text color="#ffffff" size={24}>
             {intl("app.banner")}
           </Text>
         </a>
       </Link>
+
+      <FaMapMarkedAlt size={30} color="#05bc52" style={{ marginLeft: 16 }} />
     </div>
   );
 };

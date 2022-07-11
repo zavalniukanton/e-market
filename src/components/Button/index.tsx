@@ -8,6 +8,7 @@ type Props = {
   animated?: boolean;
   wrapperStyles?: CSS;
   children: ReactNode;
+  onClick: () => void;
 };
 
 const Button = ({
@@ -17,6 +18,7 @@ const Button = ({
   animated,
   children,
   wrapperStyles,
+  onClick,
 }: Props) => {
   return (
     <NextUIButton
@@ -25,6 +27,7 @@ const Button = ({
       animated={animated}
       css={wrapperStyles}
       icon={icon}
+      onClick={onClick}
     >
       {children}
     </NextUIButton>

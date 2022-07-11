@@ -1,4 +1,4 @@
-import { Text } from "@nextui-org/react";
+import { Container, Text } from "@nextui-org/react";
 import Head from "next/head";
 import React from "react";
 
@@ -13,7 +13,9 @@ const PickupPoints = () => {
       </Head>
 
       <Layout>
-        <Text>Pickup Points</Text>
+        <Container fluid css={{ pt: 100 }}>
+          <Text css={{}}>Pickup Points</Text>
+        </Container>
       </Layout>
     </div>
   );

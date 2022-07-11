@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { useRouter } from "next/router";
 
 import Navbar from "../Navbar";
 import Footer from "../Footer";
@@ -8,11 +9,13 @@ type Props = {
 };
 
 const Layout = ({ children }: Props) => {
+  const router = useRouter();
+
   return (
     <>
       <Navbar />
       {children}
-      <Footer />
+      {router.route !== "/" && <Footer />}
     </>
   );
 };
