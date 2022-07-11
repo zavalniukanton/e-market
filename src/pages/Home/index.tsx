@@ -11,12 +11,14 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>{intl("app.home")}</title>
+        <title>
+          {intl("app.name")} - {intl("app.home")}
+        </title>
         <meta name="description" content="project description" />
       </Head>
 
       <Layout>
-        <Text>{intl("app.main")}</Text>
+        <Text css={{ height: "100vh" }}>{intl("app.main")}</Text>
       </Layout>
     </div>
   );

@@ -1,7 +1,8 @@
 {
+  "app.name": "e-market",
   "app.home": "Home",
-  "app.main": "main content",
-  "app.footer": "footer",
-  "app.banner": "banner",
-  "app.header": "header"
+  "app.banner": "Free delivery to pick-up points",
+  "app.header.catalog": "Catalog",
+  "app.header.search-placeholder": "Search...",
+  "app.header.search-button": "Find"
 }

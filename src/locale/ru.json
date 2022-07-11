@@ -1,7 +1,8 @@
 {
+  "app.name": "e-market",
   "app.home": "Главная",
-  "app.main": "основной контент",
-  "app.footer": "Футер приложения",
-  "app.banner": "твоя возможная реклама",
-  "app.header": "заголовок приложения"
+  "app.banner": "Бесплатная доставка в точки выдачи",
+  "app.header.catalog": "Каталог",
+  "app.header.search-placeholder": "Я ищу...",
+  "app.header.search-button": "Найти"
 }

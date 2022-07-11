@@ -16,11 +16,12 @@ type OptionType = {
 const customStyles = {
   control: (provided: any) => ({
     ...provided,
-    width: "120px",
+    width: "130px",
     backgroundColor: "#eaeaea",
-    borderRadius: "5px",
-    height: "25px",
+    borderRadius: "4px",
+    height: "40px",
     border: "none",
+    marginRight: "20px",
   }),
   indicatorSeparator: () => ({
     display: "none",

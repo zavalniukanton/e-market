@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import React from "react";
+import { ReactNode } from "react";
 import { IntlProvider as ReactIntlProvider } from "react-intl";
 
 const languages = {
@@ -9,7 +9,7 @@ const languages = {
 };
 
 type Props = {
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 export function IntlProvider({ children }: Props) {
