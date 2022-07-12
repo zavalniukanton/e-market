@@ -19,7 +19,7 @@ const Home = () => {
 
       <Layout>
         <Container fluid css={{ pt: 100 }}>
-          <Text css={{}}>{intl("app.main")}</Text>
+          <Text css={{}}>Home page</Text>
         </Container>
       </Layout>
     </div>
