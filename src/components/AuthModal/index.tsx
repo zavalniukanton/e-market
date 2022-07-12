@@ -1,10 +1,9 @@
-import { Grid, Input, Modal, Spacer, Text } from "@nextui-org/react";
+import { Grid, Modal, Text } from "@nextui-org/react";
 import { useState } from "react";
-import { ImFacebook, ImGoogle } from "react-icons/im";
-// import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import { useIntl } from "../../hooks/useIntl";
-import Button from "../Button";
+import AuthWithSocials from "./AuthWithSocials";
+import Divider from "./Divider";
 import LoginForm from "./LoginForm";
 import RegisterForm from "./RegisterForm";
 
@@ -61,52 +60,11 @@ const AuthModal = ({ open, onClose }: Props) => {
           </Grid>
 
           <Grid xs={1} direction="column" alignItems="center">
-            <div
-              style={{ width: 1, height: "45%", backgroundColor: "#dfe3e6" }}
-            />
-            <Text size={14} color="$accents6">
-              {intl("auth-modal.divider-text")}
-            </Text>
-            <div
-              style={{ width: 1, height: "45%", backgroundColor: "#dfe3e6" }}
-            />
+            <Divider />
           </Grid>
 
           <Grid xs={4.5} direction="column" alignItems="center">
-            <Text size={14} color="$accents6" css={{ mb: 16 }}>
-              {intl("auth-modal.social-block-title")}
-            </Text>
-
-            <Button
-              icon={<ImFacebook size={18} />}
-              onClick={() => {}}
-              wrapperStyles={{
-                width: "100%",
-                height: 48,
-                borderRadius: 4,
-                mb: 16,
-                backgroundColor: "$gray300",
-              }}
-            >
-              <Text size={18} color="$primary" weight="medium">
-                Facebook
-              </Text>
-            </Button>
-
-            <Button
-              icon={<ImGoogle size={18} />}
-              onClick={() => {}}
-              wrapperStyles={{
-                width: "100%",
-                height: 48,
-                borderRadius: 4,
-                backgroundColor: "$gray300",
-              }}
-            >
-              <Text size={18} color="$primary" weight="medium">
-                Google
-              </Text>
-            </Button>
+            <AuthWithSocials />
           </Grid>
         </Grid.Container>
       </Modal.Body>
