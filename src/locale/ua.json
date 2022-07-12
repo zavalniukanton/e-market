@@ -13,8 +13,18 @@
   "auth-modal.title": "Вхід",
   "auth-modal.social-block-title": "Увійти як користувач",
   "auth-modal.divider-text": "або",
-  "auth-modal.form-email": "Ел. пошта або телефон",
-  "auth-modal.form-password": "Пароль",
+  "auth-modal.login-form-email": "Ел. пошта або телефон",
+  "auth-modal.login-form-password": "Пароль",
   "auth-modal.form-login": "Увійти",
-  "auth-modal.form-register": "Зареєструватися"
+  "auth-modal.form-register": "Зареєструватися",
+  "auth-modal.form-already-registered": "Я вже зареєстрований",
+  "auth-modal.register-form-name": "Ім'я",
+  "auth-modal.register-form-surname": "Прізвище",
+  "auth-modal.register-form-phome": "Номер телефону",
+  "auth-modal.register-form-email": "Ел. пошта",
+  "auth-modal.register-form-password": "Придумайте пароль",
+  "auth-modal.registration-condition": "Реєструючись, ви погоджуєтеся з умовами",
+  "auth-modal.personal-data-link": "положення про обробку і захист персональних даних",
+  "auth-modal.registration-condition-and": "та",
+  "auth-modal.user-regulations-link": "угодою користувача"
 }

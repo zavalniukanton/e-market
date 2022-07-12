@@ -1,10 +1,12 @@
 import { Grid, Input, Modal, Spacer, Text } from "@nextui-org/react";
 import { useState } from "react";
 import { ImFacebook, ImGoogle } from "react-icons/im";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+// import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import { useIntl } from "../../hooks/useIntl";
 import Button from "../Button";
+import LoginForm from "./LoginForm";
+import RegisterForm from "./RegisterForm";
 
 type Props = {
   open: boolean;
@@ -17,6 +19,10 @@ const AuthModal = ({ open, onClose }: Props) => {
 
   const onLogin = () => {
     console.log("Login");
+  };
+
+  const onRegister = () => {
+    console.log("Register");
   };
 
   const toggleRegisterForm = () => {
@@ -40,65 +46,18 @@ const AuthModal = ({ open, onClose }: Props) => {
 
       <Modal.Body css={{ py: 24 }}>
         <Grid.Container>
-          <Grid xs={6.5} direction="column" alignItems="center">
-            <Input
-              label={intl("auth-modal.form-email")}
-              bordered
-              fullWidth
-              css={{
-                "& .nextui-input-block-label": {
-                  fontSize: 12,
-                  color: "$accents6",
-                },
-                "& .nextui-input-wrapper": {
-                  borderRadius: 4,
-                },
-              }}
-            />
-            <Spacer y={1} />
-            <Input.Password
-              label={intl("auth-modal.form-password")}
-              bordered
-              fullWidth
-              visibleIcon={<FaEye />}
-              hiddenIcon={<FaEyeSlash />}
-              css={{
-                "& .nextui-input-block-label": {
-                  fontSize: 12,
-                  color: "$accents6",
-                },
-                "& .nextui-input-wrapper": {
-                  borderRadius: 4,
-                },
-              }}
-            />
-
-            <Button
-              onClick={onLogin}
-              wrapperStyles={{
-                height: 48,
-                width: "100%",
-                mt: 32,
-                borderRadius: 4,
-                backgroundColor: "#05bc52",
-                fontSize: 18,
-              }}
-            >
-              {intl("auth-modal.form-login")}
-            </Button>
-
-            <Button
-              light
-              animated={false}
-              onClick={toggleRegisterForm}
-              wrapperStyles={{
-                mt: 16,
-                fontSize: 16,
-                "&:hover": { color: "#ff7878" },
-              }}
-            >
-              {intl("auth-modal.form-register")}
-            </Button>
+          <Grid xs={6.5} direction="column" alignItems="center" as="form">
+            {isRegisterForm ? (
+              <RegisterForm
+                onRegister={onRegister}
+                toggleRegisterForm={toggleRegisterForm}
+              />
+            ) : (
+              <LoginForm
+                onLogin={onLogin}
+                toggleRegisterForm={toggleRegisterForm}
+              />
+            )}
           </Grid>
 
           <Grid xs={1} direction="column" alignItems="center">

@@ -13,8 +13,18 @@
   "auth-modal.title": "Login",
   "auth-modal.social-block-title": "Log in as a user",
   "auth-modal.divider-text": "or",
-  "auth-modal.form-email": "Email or phone number",
-  "auth-modal.form-password": "Password",
+  "auth-modal.login-form-email": "Email or phone number",
+  "auth-modal.login-form-password": "Password",
   "auth-modal.form-login": "Log in",
-  "auth-modal.form-register": "Register"
+  "auth-modal.form-register": "Register",
+  "auth-modal.form-already-registered": "I am already registered",
+  "auth-modal.register-form-name": "Name",
+  "auth-modal.register-form-surname": "Surname",
+  "auth-modal.register-form-phome": "Phone number",
+  "auth-modal.register-form-email": "Email",
+  "auth-modal.register-form-password": "Password",
+  "auth-modal.registration-condition": "By registering, you agree to the terms of the",
+  "auth-modal.personal-data-link": "personal data collection and protection regulations",
+  "auth-modal.registration-condition-and": "and",
+  "auth-modal.user-regulations-link": "User Agreement"
 }

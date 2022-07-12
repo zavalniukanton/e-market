@@ -13,8 +13,18 @@
   "auth-modal.title": "Вход",
   "auth-modal.social-block-title": "Войти как пользователь",
   "auth-modal.divider-text": "или",
-  "auth-modal.form-email": "Эл. почта или телефон",
-  "auth-modal.form-password": "Пароль",
+  "auth-modal.login-form-email": "Эл. почта или телефон",
+  "auth-modal.login-form-password": "Пароль",
   "auth-modal.form-login": "Войти",
-  "auth-modal.form-register": "Зарегистрироваться"
+  "auth-modal.form-register": "Зарегистрироваться",
+  "auth-modal.form-already-registered": "Я уже зарегистрирован",
+  "auth-modal.register-form-name": "Имя",
+  "auth-modal.register-form-surname": "Фамилия",
+  "auth-modal.register-form-phome": "Номер телефона",
+  "auth-modal.register-form-email": "Эл. почта",
+  "auth-modal.register-form-password": "Придумайте пароль",
+  "auth-modal.registration-condition": "Регистрируясь, вы соглашаетесь с условиями",
+  "auth-modal.personal-data-link": "положение о сборе и защите персональных данных",
+  "auth-modal.registration-condition-and": "и",
+  "auth-modal.user-regulations-link": "пользовательским соглашением"
 }
