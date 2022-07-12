@@ -24,7 +24,7 @@
   "auth-modal.register-form-email": "Эл. почта",
   "auth-modal.register-form-password": "Придумайте пароль",
   "auth-modal.registration-condition": "Регистрируясь, вы соглашаетесь с условиями",
-  "auth-modal.personal-data-link": "положение о сборе и защите персональных данных",
+  "auth-modal.privacy-link": "положение о сборе и защите персональных данных",
   "auth-modal.registration-condition-and": "и",
-  "auth-modal.user-regulations-link": "пользовательским соглашением"
+  "auth-modal.legal-terms-link": "пользовательским соглашением"
 }

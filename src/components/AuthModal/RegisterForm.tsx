@@ -1,4 +1,5 @@
 import { Input, Spacer, Text } from "@nextui-org/react";
+import Link from "next/link";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import { useIntl } from "../../hooks/useIntl";
@@ -103,15 +104,29 @@ const RegisterForm = ({ onRegister, toggleRegisterForm }: Props) => {
 
       <Text size={12}>
         {intl("auth-modal.registration-condition")}{" "}
-        <Text span color="$primary">
-          {intl("auth-modal.personal-data-link")}{" "}
-          <Text span>
-            {intl("auth-modal.registration-condition-and")}{" "}
-            <Text span color="$primary">
-              {intl("auth-modal.user-regulations-link")}
+        <Link href="/privacy">
+          <a>
+            <Text
+              span
+              color="$primary"
+              css={{ "&:hover": { color: "#ff7878" } }}
+            >
+              {intl("auth-modal.privacy-link")}
             </Text>
-          </Text>
-        </Text>
+          </a>
+        </Link>{" "}
+        <Text span>{intl("auth-modal.registration-condition-and")}</Text>{" "}
+        <Link href="/legal-terms">
+          <a>
+            <Text
+              span
+              color="$primary"
+              css={{ "&:hover": { color: "#ff7878" } }}
+            >
+              {intl("auth-modal.legal-terms-link")}
+            </Text>
+          </a>
+        </Link>
       </Text>
 
       <Spacer />

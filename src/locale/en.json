@@ -24,7 +24,7 @@
   "auth-modal.register-form-email": "Email",
   "auth-modal.register-form-password": "Password",
   "auth-modal.registration-condition": "By registering, you agree to the terms of the",
-  "auth-modal.personal-data-link": "personal data collection and protection regulations",
+  "auth-modal.privacy-link": "personal data collection and protection regulations",
   "auth-modal.registration-condition-and": "and",
-  "auth-modal.user-regulations-link": "User Agreement"
+  "auth-modal.legal-terms-link": "User Agreement"
 }
