@@ -14,12 +14,17 @@ import ThemeToggler from "./ThemeToggler";
 import IconButton from "../IconButton";
 import Button from "../Button";
 import CartModal from "../CartModal";
+import AuthModal from "../AuthModal";
 
 const Navbar = () => {
   const { intl } = useIntl();
   const router = useRouter();
   const [isAuthModalopen, setIsAuthModalOpen] = useState(false);
   const [isCartModalopen, setIsCartModalOpen] = useState(false);
+
+  const onMenuClick = () => {
+    alert("Side menu opened");
+  };
 
   const onLogoClick = () => {
     router.push("/");
@@ -35,10 +40,6 @@ const Navbar = () => {
 
   const onToggleCartModal = () => {
     setIsCartModalOpen((prevState) => !prevState);
-  };
-
-  const onMenuClick = () => {
-    alert("Side menu opened");
   };
 
   return (
@@ -101,6 +102,7 @@ const Navbar = () => {
         </header>
       </div>
 
+      <AuthModal open={isAuthModalopen} onClose={onToggleAuthModal} />
       <CartModal open={isCartModalopen} onClose={onToggleCartModal} />
     </>
   );

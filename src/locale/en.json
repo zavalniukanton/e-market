@@ -8,5 +8,13 @@
 
   "cart-modal.title": "Cart",
   "cart-modal.empty-cart": "Cart is empty",
-  "cart-modal.empty-cart-caption": "But it's never too late to fix"
+  "cart-modal.empty-cart-caption": "But it's never too late to fix",
+
+  "auth-modal.title": "Login",
+  "auth-modal.social-block-title": "Log in as a user",
+  "auth-modal.divider-text": "or",
+  "auth-modal.form-email": "Email or phone number",
+  "auth-modal.form-password": "Password",
+  "auth-modal.form-login": "Log in",
+  "auth-modal.form-register": "Register"
 }

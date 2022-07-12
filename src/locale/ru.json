@@ -8,5 +8,13 @@
 
   "cart-modal.title": "Корзина",
   "cart-modal.empty-cart": "Корзина пустая",
-  "cart-modal.empty-cart-caption": "Но это никогда не поздно исправить"
+  "cart-modal.empty-cart-caption": "Но это никогда не поздно исправить",
+
+  "auth-modal.title": "Вход",
+  "auth-modal.social-block-title": "Войти как пользователь",
+  "auth-modal.divider-text": "или",
+  "auth-modal.form-email": "Эл. почта или телефон",
+  "auth-modal.form-password": "Пароль",
+  "auth-modal.form-login": "Войти",
+  "auth-modal.form-register": "Зарегистрироваться"
 }
