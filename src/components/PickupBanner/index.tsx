@@ -5,6 +5,7 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 
 import { useIntl } from "../../hooks/useIntl";
 import { styles } from "./styles";
+import { ROUTES } from "../../constant/routes";
 
 const PickupBanner = () => {
   const { intl } = useIntl();
@@ -26,7 +27,7 @@ const PickupBanner = () => {
 
   return (
     <div style={styles.banner(scrolled)}>
-      <Link href="/pickup-points">
+      <Link href={ROUTES.pickupPoints}>
         <a>
           <Text color="#ffffff" size={24}>
             {intl("app.banner")}

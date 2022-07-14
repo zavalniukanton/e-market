@@ -7,6 +7,7 @@ import { FiGrid } from "react-icons/fi";
 import { BiUser, BiCart } from "react-icons/bi";
 
 import { useIntl } from "../../hooks/useIntl";
+import { ROUTES } from "../../constant/routes";
 import LanguageSelect from "./LanguageSelect";
 import PickupBanner from "../PickupBanner";
 import SearchInput from "./SearchInput";
@@ -27,7 +28,7 @@ const Navbar = () => {
   };
 
   const onLogoClick = () => {
-    router.push("/");
+    router.push(ROUTES.home);
   };
 
   const onCatalogClick = () => {

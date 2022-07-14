@@ -1,4 +1,8 @@
 export const ROUTES = {
+  home: "/",
+  pickupPoints: "/pickup-points",
+  privacy: "/privacy",
+  legalTerms: "/legal-terms",
   about: "/about-us",
   regulations: "/our-regulations",
   contacts: "/contacts",

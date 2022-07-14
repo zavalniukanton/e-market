@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import { useIntl } from "../../hooks/useIntl";
+import { ROUTES } from "../../constant/routes";
 import Button from "../Button";
 
 type Props = {
@@ -104,7 +105,7 @@ const RegisterForm = ({ onRegister, toggleRegisterForm }: Props) => {
 
       <Text size={12}>
         {intl("auth-modal.registration-condition")}{" "}
-        <Link href="/privacy">
+        <Link href={ROUTES.privacy}>
           <a>
             <Text
               span
@@ -116,7 +117,7 @@ const RegisterForm = ({ onRegister, toggleRegisterForm }: Props) => {
           </a>
         </Link>{" "}
         <Text span>{intl("auth-modal.registration-condition-and")}</Text>{" "}
-        <Link href="/legal-terms">
+        <Link href={ROUTES.legalTerms}>
           <a>
             <Text
               span
