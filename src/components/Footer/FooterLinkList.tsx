@@ -1,15 +1,14 @@
 import { Text } from "@nextui-org/react";
 import Link from "next/link";
 
-type FooterLink = {
-  id: string;
-  linkName: string;
-  href: string;
+type Route = {
+  name: string;
+  path: string;
 };
 
 type Props = {
   listTitle: string;
-  data: FooterLink[];
+  data: Route[];
 };
 
 const FooterLinkList = ({ listTitle, data }: Props) => {
@@ -20,11 +19,11 @@ const FooterLinkList = ({ listTitle, data }: Props) => {
       </Text>
       <ul>
         {data.map((link) => (
-          <li key={link.id}>
-            <Link href={link.href}>
+          <li key={link.path}>
+            <Link href={link.path}>
               <a>
                 <Text span size={14} color="#3e77aa">
-                  {link.linkName}
+                  {link.name}
                 </Text>
               </a>
             </Link>

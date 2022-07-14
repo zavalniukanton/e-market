@@ -3,7 +3,7 @@ import Image from "next/image";
 import { BiCopyright } from "react-icons/bi";
 
 import { useIntl } from "../../hooks/useIntl";
-import { FOOTER_LINK } from "../../constant/footerLink";
+import { ROUTES } from "../../constant/routes";
 import FooterLinkList from "./FooterLinkList";
 
 import googleStore from "../../../public/images/google-play.png";
@@ -13,6 +13,34 @@ import visa from "../../../public/images/visa-logo.png";
 
 const Footer = () => {
   const { intl } = useIntl();
+
+  const NAVIGATION_LIST = {
+    companyInfo: [
+      { path: ROUTES.about, name: intl("app.about") },
+      { path: ROUTES.regulations, name: intl("app.regulations") },
+      { path: ROUTES.contacts, name: intl("app.contacts") },
+    ],
+    help: [
+      { path: ROUTES.delivery, name: intl("app.delivery") },
+      { path: ROUTES.credit, name: intl("app.credit") },
+      { path: ROUTES.warranty, name: intl("app.warranty") },
+      { path: ROUTES.goodsReturn, name: intl("app.goods-return") },
+      { path: ROUTES.serviceCenters, name: intl("app.service-centers") },
+    ],
+    services: [
+      { path: ROUTES.bonusAccount, name: intl("app.bonus-account") },
+      { path: ROUTES.rozetkaPremium, name: intl("app.rozetka-premium") },
+      { path: ROUTES.giftCertificates, name: intl("app.gift-certificates") },
+      { path: ROUTES.rozetkaExchange, name: intl("app.rozetka-exchange") },
+      { path: ROUTES.tours, name: intl("app.tours-vacations") },
+    ],
+    partners: [
+      { path: ROUTES.sales, name: intl("app.sales") },
+      { path: ROUTES.partnership, name: intl("app.partnership") },
+      { path: ROUTES.franchising, name: intl("app.franchising") },
+      { path: ROUTES.rental, name: intl("app.rental") },
+    ],
+  };
 
   return (
     <footer>
@@ -60,25 +88,25 @@ const Footer = () => {
           <Grid xs={3} direction="column">
             <FooterLinkList
               listTitle={intl("app.footer.company-info")}
-              data={FOOTER_LINK.companyInfo}
+              data={NAVIGATION_LIST.companyInfo}
             />
           </Grid>
           <Grid xs={3} direction="column">
             <FooterLinkList
               listTitle={intl("app.footer.help")}
-              data={FOOTER_LINK.help}
+              data={NAVIGATION_LIST.help}
             />
           </Grid>
           <Grid xs={3} direction="column">
             <FooterLinkList
               listTitle={intl("app.footer.services")}
-              data={FOOTER_LINK.services}
+              data={NAVIGATION_LIST.services}
             />
           </Grid>
           <Grid xs={3} direction="column">
             <FooterLinkList
               listTitle={intl("app.footer.partners")}
-              data={FOOTER_LINK.partners}
+              data={NAVIGATION_LIST.partners}
             />
           </Grid>
         </Grid.Container>
