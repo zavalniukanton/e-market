@@ -2,9 +2,17 @@
   "app.name": "e-market",
   "app.home": "Home",
   "app.banner": "Free delivery to pick-up points",
+
   "app.header.catalog": "Catalog",
   "app.header.search-placeholder": "Search...",
   "app.header.search-button": "Find",
+
+  "app.footer.search-apps": "Download our applications",
+  "app.footer.company-info": "Information about company",
+  "app.footer.help": "Help",
+  "app.footer.services": "Services",
+  "app.footer.partners": "Partnerhip",
+  "app.footer.copyrights": "Online store E-market, 2022",
 
   "cart-modal.title": "Cart",
   "cart-modal.empty-cart": "Cart is empty",

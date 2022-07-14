@@ -2,9 +2,17 @@
   "app.name": "e-market",
   "app.home": "Головна",
   "app.banner": "Безкоштовна доставка в точки видачі",
+
   "app.header.catalog": "Каталог",
   "app.header.search-placeholder": "Я шукаю...",
   "app.header.search-button": "Знайти",
+
+  "app.footer.search-apps": "Завантажуйте наші додатки",
+  "app.footer.company-info": "Інформація про компанію",
+  "app.footer.help": "Допомога",
+  "app.footer.services": "Сервіси",
+  "app.footer.partners": "Партнерам",
+  "app.footer.copyrights": "Інтернет-магазин E-market, 2022",
 
   "cart-modal.title": "Кошик",
   "cart-modal.empty-cart": "Кошик порожній",
