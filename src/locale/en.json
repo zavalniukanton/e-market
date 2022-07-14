@@ -52,5 +52,25 @@
   "auth-modal.registration-condition": "By registering, you agree to the terms of the",
   "auth-modal.privacy-link": "personal data collection and protection regulations",
   "auth-modal.registration-condition-and": "and",
-  "auth-modal.legal-terms-link": "User Agreement"
+  "auth-modal.legal-terms-link": "User Agreement",
+
+  "sidebar.laptops-computers": "Laptops and PC",
+  "sidebar.smartphones-tv": "Smartphones, TV",
+  "sidebar.products-for-gamers": "Game zone",
+  "sidebar.home-appliances": "Home appliances",
+  "sidebar.household-goods": "Household goods",
+  "sidebar.tools": "Tools",
+  "sidebar.plumbing-repair": "plumbing and repair",
+  "sidebar.garden": "Garden",
+  "sidebar.sport": "Sport and hobbies",
+  "sidebar.fasion": "Fashion",
+  "sidebar.beauty": "Beauty and health",
+  "sidebar.products-for-children": "Products for children",
+  "sidebar.pet-supplies": "Pet supplies",
+  "sidebar.discounted-products": "Discounted products",
+  "sidebar.alcohol-and-products": "Alcohol and products",
+  "sidebar.business-goods": "Products for business",
+  "sidebar.help-center": "Help center",
+  "sidebar.link-with-us": "Contact us",
+  "sidebar.pickup-points": "Pick up points of Rozetka"
 }

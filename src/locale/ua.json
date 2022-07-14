@@ -52,5 +52,25 @@
   "auth-modal.registration-condition": "Реєструючись, ви погоджуєтеся з умовами",
   "auth-modal.privacy-link": "положення про обробку і захист персональних даних",
   "auth-modal.registration-condition-and": "та",
-  "auth-modal.legal-terms-link": "угодою користувача"
+  "auth-modal.legal-terms-link": "угодою користувача",
+
+  "sidebar.laptops-computers": "Ноутбуки та комп’ютери",
+  "sidebar.smartphones-tv": "Смартфони, ТВ і електроніка",
+  "sidebar.products-for-gamers": "Товари для геймерів",
+  "sidebar.home-appliances": "Побутова техніка",
+  "sidebar.household-goods": "Товари для дому",
+  "sidebar.tools": "Інструменти та автотовари",
+  "sidebar.plumbing-repair": "Сантехніка та ремонт",
+  "sidebar.garden": "Дача, сад, город",
+  "sidebar.sport": "Спорт і захоплення",
+  "sidebar.fasion": "Одяг, взуття та прикраси",
+  "sidebar.beauty": "Краса та здоров'я",
+  "sidebar.products-for-children": "Дитячі товари",
+  "sidebar.pet-supplies": "Зоотовари",
+  "sidebar.discounted-products": "Товари з уцінкою",
+  "sidebar.alcohol-and-products": "Алкогольні напої та продукти",
+  "sidebar.business-goods": "Товари для бізнесу та послуги",
+  "sidebar.help-center": "Довідковий центр",
+  "sidebar.link-with-us": "Зв'язатися з нами",
+  "sidebar.pickup-points": "Точки видачі Rozetka"
 }
