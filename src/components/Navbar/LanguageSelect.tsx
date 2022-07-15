@@ -7,11 +7,7 @@ import ruFlag from "../../../public/icons/ru.svg";
 
 import { LOCALE_OPTIONS } from "../../constant/localeOptions";
 import { useLanguageSelect } from "../../hooks/useLanguageSelect";
-
-type OptionType = {
-  value: string;
-  label: string;
-};
+import { SelectOptionsType } from "../../models/models";
 
 const customStyles = {
   control: (provided: any) => ({
@@ -35,7 +31,7 @@ const customStyles = {
 const LanguageSelect = () => {
   const { selectLanguage, locale } = useLanguageSelect();
 
-  const handleChange = (option: OptionType | null) => {
+  const handleChange = (option: SelectOptionsType | null) => {
     selectLanguage(option?.value);
   };
 

@@ -1,15 +1,6 @@
-import { Button as NextUIButton, CSS } from "@nextui-org/react";
-import { ReactNode } from "react";
+import { Button as NextUIButton } from "@nextui-org/react";
 
-type Props = {
-  icon?: ReactNode;
-  light?: boolean;
-  auto?: boolean;
-  animated?: boolean;
-  wrapperStyles?: CSS;
-  children: ReactNode;
-  onClick: () => void;
-};
+import { ButtonProps } from "../../models/models";
 
 const Button = ({
   icon,
@@ -19,7 +10,7 @@ const Button = ({
   children,
   wrapperStyles,
   onClick,
-}: Props) => {
+}: ButtonProps) => {
   return (
     <NextUIButton
       auto={auto}

@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
-import { ReactNode } from "react";
 import { IntlProvider as ReactIntlProvider } from "react-intl";
+
+import { IntlProviderProps } from "../models/models";
 
 const languages = {
   en: require("../locale/en.json"),
@@ -8,11 +9,7 @@ const languages = {
   ru: require("../locale/ru.json"),
 };
 
-type Props = {
-  children: ReactNode;
-};
-
-export function IntlProvider({ children }: Props) {
+export function IntlProvider({ children }: IntlProviderProps) {
   const { locale = "ua", defaultLocale } = useRouter();
 
   // @ts-ignore

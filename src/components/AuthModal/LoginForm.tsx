@@ -2,14 +2,10 @@ import { Input, Spacer } from "@nextui-org/react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import { useIntl } from "../../hooks/useIntl";
+import { LoginFormProps } from "../../models/models";
 import Button from "../Button";
 
-type Props = {
-  onLogin: () => void;
-  toggleRegisterForm: () => void;
-};
-
-const LoginForm = ({ onLogin, toggleRegisterForm }: Props) => {
+const LoginForm = ({ onLogin, toggleRegisterForm }: LoginFormProps) => {
   const { intl } = useIntl();
 
   return (

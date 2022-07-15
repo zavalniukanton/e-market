@@ -1,13 +1,8 @@
-import { Button, CSS } from "@nextui-org/react";
-import { ReactNode } from "react";
+import { Button } from "@nextui-org/react";
 
-type Props = {
-  icon: ReactNode;
-  styles?: CSS;
-  onClick: () => void;
-};
+import { IconButtonProps } from "../../models/models";
 
-const IconButton = ({ icon, styles, onClick }: Props) => {
+const IconButton = ({ icon, styles, onClick }: IconButtonProps) => {
   return (
     <Button
       auto

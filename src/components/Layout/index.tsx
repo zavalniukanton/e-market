@@ -1,14 +1,10 @@
-import { ReactNode } from "react";
 import { useRouter } from "next/router";
 
+import { LayoutProps } from "../../models/models";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 
-type Props = {
-  children: ReactNode;
-};
-
-const Layout = ({ children }: Props) => {
+const Layout = ({ children }: LayoutProps) => {
   const router = useRouter();
 
   return (

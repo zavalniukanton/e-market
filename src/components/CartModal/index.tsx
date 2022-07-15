@@ -2,15 +2,11 @@ import { Modal, Text } from "@nextui-org/react";
 import Image from "next/image";
 
 import { useIntl } from "../../hooks/useIntl";
+import { ModalProps } from "../../models/models";
 
 import cart from "../../../public/images/cart.png";
 
-type Props = {
-  open: boolean;
-  onClose: () => void;
-};
-
-const CartModal = ({ open, onClose }: Props) => {
+const CartModal = ({ open, onClose }: ModalProps) => {
   const { intl } = useIntl();
 
   return (

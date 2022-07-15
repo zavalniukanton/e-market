@@ -5,13 +5,12 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useIntl } from "../../hooks/useIntl";
 import { ROUTES } from "../../constant/routes";
 import Button from "../Button";
+import { RegisterFormProps } from "../../models/models";
 
-type Props = {
-  onRegister: () => void;
-  toggleRegisterForm: () => void;
-};
-
-const RegisterForm = ({ onRegister, toggleRegisterForm }: Props) => {
+const RegisterForm = ({
+  onRegister,
+  toggleRegisterForm,
+}: RegisterFormProps) => {
   const { intl } = useIntl();
 
   return (

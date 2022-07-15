@@ -2,17 +2,13 @@ import { Grid, Modal, Text } from "@nextui-org/react";
 import { useState } from "react";
 
 import { useIntl } from "../../hooks/useIntl";
+import { ModalProps } from "../../models/models";
 import AuthWithSocials from "./AuthWithSocials";
 import Divider from "./Divider";
 import LoginForm from "./LoginForm";
 import RegisterForm from "./RegisterForm";
 
-type Props = {
-  open: boolean;
-  onClose: () => void;
-};
-
-const AuthModal = ({ open, onClose }: Props) => {
+const AuthModal = ({ open, onClose }: ModalProps) => {
   const { intl } = useIntl();
   const [isRegisterForm, setIsRegisterForm] = useState(false);
 
